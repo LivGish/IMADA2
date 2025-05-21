@@ -55,46 +55,54 @@ class flashcards : AppCompatActivity() {
         //declare a variable to keep track of the amount of questions that the user gets right.
         var score = 0
 
-        //runs the loop so long as the LCV is less than 5; This code was adapted from W3 Schools (2025): https://www.w3schools.com/kotlin/kotlin_while_loop.php
-        while (counter < 5) {
-            //Displays the heading from the array depending on the counter position
-            txtHeading.text = "${headings[counter]}"
+        //displays the text in green when the app is run; This code was adapted from Geeks for Geeks (2025): https://www.geeksforgeeks.org/textview-in-kotlin/
+        txtBody.text = """
+            Your physics topic is: wave theory.
+            Press 'start quiz' to begin. 
+        """.trimIndent()
 
-            //Displays the question from the array depending on the counter position
-            txtBody.text = "${questions[counter]}"
 
-            //tells the user if their answer is right or wrong depending on which button they pressed
-            btnTrue.setOnClickListener {
-                //runs an if statement to check the answer; This code was adapted from W3 Schools (2025): https://www.w3schools.com/kotlin/kotlin_conditions.php                if (answers[counter] == true) {
-                if (answers[counter] == true) {
-                    txtBody.text = "Correct!"
-
-                    //adds 1 to the score counter if the answer is correct
-                    score += 1
-                } else {
-                    txtBody.text = "Incorrect!"
-                }
-            }
-            //runs an if statement to check the answer; This code was adapted from W3 Schools (2025): https://www.w3schools.com/kotlin/kotlin_conditions.php
-            btnFalse.setOnClickListener {
-                if (answers[counter] == false) {
-                    txtBody.text = "Correct!"
-
-                    //adds 1 to the score counter if the answer is correct
-                    score += 1
-                } else {
-                    txtBody.text = "Incorrect!"
-                }
-            }
-
-            //moves to the next question when the next button is pressed; This code was adapted from Geeks For Geeks (2025): https://www.geeksforgeeks.org/button-in-kotlin/
+            //starts the quiz once the button is clicked; This code was adapted from W3 Schools (2025): https://www.w3schools.com/kotlin/kotlin_conditions.php
             btnNext.setOnClickListener {
+                //Displays the heading from the array depending on the counter position
+                txtHeading.text = "${headings[counter]}"
+
+                //Displays the question from the array depending on the counter position
+                txtBody.text = "${questions[counter]}"
+
+                //changes the text of the button one the quiz is started
+                btnNext.text = "Next"
+
+                //tells the user if their answer is right or wrong depending on which button they pressed
+                btnTrue.setOnClickListener {
+                    //runs an if statement to check the answer; This code was adapted from W3 Schools (2025): https://www.w3schools.com/kotlin/kotlin_conditions.php
+                    if (answers[counter] == true) {
+                        txtBody.text = "Correct!"
+
+                        //adds 1 to the score counter if the answer is correct
+                        score += 1
+                    } else {
+                        txtBody.text = "Incorrect!"
+                    }
+                }
+                //runs an if statement to check the answer; This code was adapted from W3 Schools (2025): https://www.w3schools.com/kotlin/kotlin_conditions.php
+                btnFalse.setOnClickListener {
+                    if (answers[counter] == false) {
+                        txtBody.text = "Correct!"
+
+                        //adds 1 to the score counter if the answer is correct
+                        score += 1
+                    } else {
+                        txtBody.text = "Incorrect!"
+                    }
+                }
                 counter += 1
+
             }
-        }
+
 
         //changes the function of the next button once all of the questions have been answered; This code was adapted from W3 Schools (2025): https://www.w3schools.com/kotlin/kotlin_conditions.php
-        if (counter > 5) {
+        if (counter >= 5) {
 
             //switches to the summary page once the button is clicked; This code was adapted from a Stack Overflow post by "Zer0" (2014): https://stackoverflow.com/questions/10036157/how-to-navigate-from-one-page-to-another-on-androidtotal3-pages
             btnNext.setOnClickListener{
@@ -114,11 +122,11 @@ class flashcards : AppCompatActivity() {
 // Version: 1.0
 // Available: https://www.w3schools.com/kotlin/kotlin_arrays.php
 
-// Title: Kotlin While Loop
-// Author: W3 Schools
-// Date: 21 May 2025
+// Title: TextView in Kotlin
+// Author: Geeks for Geeks
+// Date: 24 February 2025
 // Version: 1.0
-// Available: https://www.w3schools.com/kotlin/kotlin_while_loop.php
+// Available: https://www.geeksforgeeks.org/textview-in-kotlin/
 
 // Title: Kotlin If ... Else
 // Author: W3 Schools

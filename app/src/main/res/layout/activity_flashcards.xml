@@ -52,7 +52,7 @@
         android:layout_width="128dp"
         android:layout_height="62dp"
         android:backgroundTint="#B1B3BD"
-        android:text="Next"
+        android:text="Start quiz"
         android:textColor="#0c1a30"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

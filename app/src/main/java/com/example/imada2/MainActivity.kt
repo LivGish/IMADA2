@@ -28,9 +28,9 @@ class MainActivity : AppCompatActivity() {
             Welcome to the physics flashcard 
             app!
             There are 5 true or false 
-            questions based on waves in 
-            physics.
-            Press 'start' to begin the quiz. 
+            questions based on a 
+            physics topic.
+            Press 'start' to move to the flashcard page. 
         """.trimIndent()
 
         //switches to the flashcard page when the button is clicked; This code was adapted from a Stack Overflow post by "Zer0" (2014): https://stackoverflow.com/questions/10036157/how-to-navigate-from-one-page-to-another-on-androidtotal3-pages

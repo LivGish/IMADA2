@@ -7,4 +7,60 @@
     android:layout_height="match_parent"
     tools:context=".Summary">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="419dp"
+        android:layout_height="747dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wallpaper" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="128dp"
+        android:layout_height="62dp"
+        android:backgroundTint="#B1B3BD"
+        android:text="Exit"
+        android:textColor="#0c1a30"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.804" />
+
+    <TextView
+        android:id="@+id/txtHeading"
+        android:layout_width="375dp"
+        android:layout_height="73dp"
+        android:gravity="center_horizontal"
+        android:text="Flashcards summary"
+        android:textColor="#B1B3BD"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <TextView
+        android:id="@+id/txtBody"
+        android:layout_width="325dp"
+        android:layout_height="176dp"
+        android:text="TextView"
+        android:gravity="center_horizontal"
+        android:textColor="#B1B3BD"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.398" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
             Press 'start' to move to the flashcard page. 
         """.trimIndent()
 
-        //switches to the flashcard page when the button is clicked; This code was adapted from a Stack Overflow post by "Zer0" (2014): https://stackoverflow.com/questions/10036157/how-to-navigate-from-one-page-to-another-on-androidtotal3-pages
+        //switches to the flashcard page when the button is clicked; This code was adapted from a Stack Overflow response by "Zer0" (2014): https://stackoverflow.com/questions/10036157/how-to-navigate-from-one-page-to-another-on-androidtotal3-pages
         btnStart.setOnClickListener{
             val intent = Intent (this, flashcards::class.java)
             startActivity(intent)
@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
 // Available: https://www.geeksforgeeks.org/textview-in-kotlin/
 
 // Title: How to navigate from one page to another on android? (Total:3 pages)
-// Author: StackOverflow
+// Author: Zer0 on StackOverflow
 // Date: 22 June 2014
 // Version: 1.0
 // Available: https://stackoverflow.com/questions/10036157/how-to-navigate-from-one-page-to-another-on-androidtotal3-pages
